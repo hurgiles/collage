@@ -40,7 +40,7 @@ body {
 #rose-container {
     width: 100px;
     height: 100px;
-    background: url('path-to-rose-image.png') no-repeat center center;
+    background: url('.img/rosa.svg') no-repeat center center;
     background-size: contain;
     animation: grow 5s ease-in-out forwards;
 }
