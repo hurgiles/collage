@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para mostrar la animación de la rosa
     const showRoseAnimation = () => {
         roseContainer.classList.add('show');
-        // Aquí podrías usar una biblioteca como Anime.js para animar la rosa
         setTimeout(() => {
             button.style.display = 'block';
         }, 5000); // Ajusta el tiempo según la duración de la animación
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para mostrar el collage animado
     const showCollageAnimation = () => {
         collageContainer.classList.add('show');
-        // Aquí podrías usar una biblioteca como Anime.js para animar el collage
     };
 
     // Evento para el botón
