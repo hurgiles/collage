@@ -1,0 +1,62 @@
+/* styles.css */
+
+/* Estilo del cuerpo */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Contenedores para la rosa y el collage */
+#rose-container, #collage-container {
+    display: none;
+    margin-bottom: 20px;
+}
+
+/* Botón para ir al collage */
+#to-collage {
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Mostrar contenedores */
+#rose-container.show, #collage-container.show {
+    display: block;
+}
+
+/* Animación de la rosa */
+@keyframes grow {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+/* Estilo del contenedor de la rosa */
+#rose-container {
+    width: 100px;
+    height: 100px;
+    background: url('path-to-rose-image.png') no-repeat center center;
+    background-size: contain;
+    animation: grow 5s ease-in-out forwards;
+}
+
+/* Animación del collage */
+@keyframes collage {
+    0% { background-image: url('path-to-part1.png'); }
+    25% { background-image: url('path-to-part2.png'); }
+    50% { background-image: url('path-to-part3.png'); }
+    75% { background-image: url('path-to-part4.png'); }
+    100% { background-image: url('path-to-heart.png'); }
+}
+
+/* Estilo del contenedor del collage */
+#collage-container {
+    width: 200px;
+    height: 200px;
+    animation: collage 5s steps(5) forwards;
+}
